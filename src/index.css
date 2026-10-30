@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default: Studio Dark */
+  --color-bg: #0d0f12;
+  --color-card: #15181e;
+  --color-elevated: #1c212a;
+  --color-border: #2b3342;
+  --color-border-subtle: #1e2430;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-text: #f3f4f6;
+  --color-text-muted: #9ca3af;
+  --color-text-dim: #64748b;
+  --color-accent: #38bdf8;
+  --color-accent-glow: rgba(56, 189, 248, 0.25);
+  --color-btn: #1a202c;
+  --color-btn-hover: #252d3d;
+  --color-btn-active: #131720;
+  --color-btn-fn: #232b3b;
+  --color-btn-fn-hover: #2e394e;
+  --color-btn-op: #1e293b;
+  --color-btn-op-hover: #2d3b55;
+  --color-btn-equal: #2563eb;
+  --color-btn-equal-hover: #1d4ed8;
+  --color-danger: #ef4444;
+  --shadow-tactile: 0 4px 0 #0c1017, 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-tactile-pressed: 0 1px 0 #0c1017, inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.theme-clean-light {
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-elevated: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-border-subtle: #cbd5e1;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-dim: #94a3b8;
+  --color-accent: #0284c7;
+  --color-accent-glow: rgba(2, 132, 199, 0.2);
+  --color-btn: #f8fafc;
+  --color-btn-hover: #edf2f7;
+  --color-btn-active: #e2e8f0;
+  --color-btn-fn: #f1f5f9;
+  --color-btn-fn-hover: #e2e8f0;
+  --color-btn-op: #e0f2fe;
+  --color-btn-op-hover: #bae6fd;
+  --color-btn-equal: #0284c7;
+  --color-btn-equal-hover: #0369a1;
+  --color-danger: #dc2626;
+  --shadow-tactile: 0 3px 0 #cbd5e1, 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-tactile-pressed: 0 1px 0 #cbd5e1, inset 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.theme-amber-phosphor {
+  --color-bg: #0a0907;
+  --color-card: #13100a;
+  --color-elevated: #1e1910;
+  --color-border: #42361d;
+  --color-border-subtle: #2b2210;
+  --color-primary: #f59e0b;
+  --color-primary-hover: #d97706;
+  --color-text: #fbbf24;
+  --color-text-muted: #d97706;
+  --color-text-dim: #92400e;
+  --color-accent: #f59e0b;
+  --color-accent-glow: rgba(245, 158, 11, 0.35);
+  --color-btn: #1a160f;
+  --color-btn-hover: #292215;
+  --color-btn-active: #120f09;
+  --color-btn-fn: #251e12;
+  --color-btn-fn-hover: #362c18;
+  --color-btn-op: #38280d;
+  --color-btn-op-hover: #4e3810;
+  --color-btn-equal: #d97706;
+  --color-btn-equal-hover: #b45309;
+  --color-danger: #f87171;
+  --shadow-tactile: 0 4px 0 #070604, 0 4px 10px rgba(245, 158, 11, 0.12);
+  --shadow-tactile-pressed: 0 1px 0 #070604, inset 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.theme-nordic-slate {
+  --color-bg: #0b1120;
+  --color-card: #152033;
+  --color-elevated: #1e2c45;
+  --color-border: #334460;
+  --color-border-subtle: #223047;
+  --color-primary: #38bdf8;
+  --color-primary-hover: #0ea5e9;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-dim: #64748b;
+  --color-accent: #38bdf8;
+  --color-accent-glow: rgba(56, 189, 248, 0.25);
+  --color-btn: #1a283f;
+  --color-btn-hover: #25395a;
+  --color-btn-active: #131d2e;
+  --color-btn-fn: #21324d;
+  --color-btn-fn-hover: #2d4368;
+  --color-btn-op: #1c3d5a;
+  --color-btn-op-hover: #255177;
+  --color-btn-equal: #0284c7;
+  --color-btn-equal-hover: #0369a1;
+  --color-danger: #f43f5e;
+  --shadow-tactile: 0 4px 0 #090e1a, 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-tactile-pressed: 0 1px 0 #090e1a, inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Base resets & typography */
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-dim);
+}
+
+/* Keycap button physical tactile click dynamics */
+.keycap-btn {
+  box-shadow: var(--shadow-tactile);
+  transition: all 0.05s ease-out;
+}
+
+.keycap-btn:active,
+.keycap-btn.is-active {
+  transform: translateY(3px);
+  box-shadow: var(--shadow-tactile-pressed);
+}
+
+/* Smooth phosphor CRT glow effect for Amber Phosphor theme */
+.theme-amber-phosphor .phosphor-glow {
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.6), 0 0 24px rgba(245, 158, 11, 0.3);
+}
+
+.theme-amber-phosphor .phosphor-border {
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.15);
+}
